@@ -6,20 +6,14 @@ import Implementation.FlyWithWings;
 import Implementation.Quack;
 
 public class MallardDuck extends Duck{
-    private static final String NAME="mallard duck";
-
     public MallardDuck(){
+        this.NAME="Mallard Duck";
         quackBehavior=new Quack();
         flyBehavior=new FlyWithWings();
     }
 
     @Override
-    public void performQuack(){
-        System.out.println(quackBehavior.quack(NAME));
-    }
-
-    @Override
-    public void performFly(){
-        System.out.println(flyBehavior.fly(NAME));
+    public void display() {
+        System.out.println("I am a "+this.NAME);
     }
 }

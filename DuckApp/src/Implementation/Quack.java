@@ -7,7 +7,7 @@ public class Quack implements QuackBehavior {
      * @return String
      */
     @Override
-    public String quack(String name) {
-        return name+" quacking";
+    public void quack(String name) {
+        System.out.println(name+" quacking");
     }
 }

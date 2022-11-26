@@ -1,5 +1,5 @@
 package Behaviour;
 
 public interface QuackBehavior {
-    String quack(String name);
+    void quack(String name);
 }

@@ -4,26 +4,33 @@ import Behaviour.FlyBehavior;
 import Behaviour.QuackBehavior;
 
 public class Duck {
-   private static final String NAME="Duck";
+    public String NAME ;
 
     public FlyBehavior flyBehavior;
     public QuackBehavior quackBehavior;
 
-
-    public void display(){
-        System.out.println("I am the Duck Class");
+    public void setFlyBehavior(FlyBehavior flyBehavior) {
+        this.flyBehavior = flyBehavior;
     }
 
-    public void swim(){
+    public void setQuackBehavior(QuackBehavior quackBehavior) {
+        this.quackBehavior = quackBehavior;
+    }
+
+
+    public void display() {
+        System.out.println("I am a kind of Duck");
+    }
+
+    public void swim() {
         System.out.println("I am Swimming");
     }
 
-    public void performQuack(){
-        System.out.println(quackBehavior.quack(NAME));
-
+    public void performQuack() {
+        quackBehavior.quack(NAME);
     }
 
-    public void performFly(){
-        System.out.println(flyBehavior.fly(NAME));
+    public void performFly() {
+        flyBehavior.fly(NAME);
     }
 }

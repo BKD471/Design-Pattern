@@ -7,7 +7,7 @@ public class FlyNoWay implements FlyBehavior {
      * @return string
      */
     @Override
-    public String fly(String name) {
-        return name+" can't fly";
+    public void fly(String name) {
+        System.out.println(name+" can't fly");
     }
 }
