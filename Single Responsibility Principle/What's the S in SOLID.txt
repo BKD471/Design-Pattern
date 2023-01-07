@@ -1,0 +1,33 @@
+SOLID
+
+S---> Single Responsibility Principle
+O---> Open Closed Principle
+L---> Liskov Substitution Principle
+I---> Interface Segregation Principle
+D---> Dependency Inversion Principle
+
+
+S
+
+Single Responsibility Principle (SRP)--->
+
+There Should never be more than One Reason for a class to Change.
+In Simple words,A class should focus on single functionality, It must address a specific concern.
+
+
+Lets take a scenario, we have a code written inside a class sending and getting some messages from a remote server listening on a port,
+There could be different possible reasons for this class to change,
+
+1)Communication Protocol changes from HTTP to HTTPS
+2)Response/Request format changes from JSON to XML.
+3)If Server demands authentication to be provided in order to login or perform some operations ,
+then we must incorporate code changes to provide auth
+
+SRP recommends us, to avoid these types of multiple reason for changes for a single class.
+So in order to follow on, SRP says to have multiple class(3 classes here) to handle different responsibilities.
+So that if we want to change something in future, the refactoring effort would be very less and risk of breaking other functinalities would be very less
+
+
+
+
+
