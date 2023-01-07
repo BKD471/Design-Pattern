@@ -24,18 +24,17 @@ public class UserController {
         User user = mapper.readValue(userJson, User.class);
 
         //Here it checks whether user is valid or not
-        //this type of logic should be done in service layer of APp and not in controller
-        //If our validation logic changes or if we add a new param to User,this class needs to change
-        //and this is bad :)
+        //and this bad because we are writing validation logic here in controller,
+        //if we add new param to user pojo obj then the this class needs modification
         if (!isValidUser(user)) {
             invalidUser(user);
             return "ERROR";
         }
 
         //Here it stores the user to database,
-        //this type of logic should be present in Repository layer or Persistence Layer and not here
         //Suppose we  are changing database from mysql to mongodb
         //then new business requirement  will force this class to change
+        // this type of logic is best suited in repository layer/ persistence layer and not in controller
         store.store(user);
 
         getUserInfo(store, user);
@@ -54,6 +53,9 @@ public class UserController {
                     user.getAddress(), user.getEmail()));
     }
 
+    //this type of logic should be done in service layer of APp and not in controller
+    //If our validation logic changes or if we add a new param to User,this class needs to change
+    //and this is bad :)
     private boolean isValidUser(User user) {
         if (!isPresent(user.getName())) return false;
         user.setName(user.getName().trim());
