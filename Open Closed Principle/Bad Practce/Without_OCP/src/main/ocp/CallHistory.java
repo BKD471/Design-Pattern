@@ -12,7 +12,6 @@ import java.util.*;
 public class CallHistory {
     @Data
     @AllArgsConstructor
-    @NoArgsConstructor
     public static class Call {
         private LocalDateTime begin;
         private long duration;

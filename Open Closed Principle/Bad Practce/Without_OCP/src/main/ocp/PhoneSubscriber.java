@@ -1,10 +1,12 @@
 package ocp;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
 @Data
+@NoArgsConstructor
 public class PhoneSubscriber {
 
     private Long subscriberId;
@@ -24,6 +26,5 @@ public class PhoneSubscriber {
         long totalDuration = sessions.stream().mapToLong(CallHistory.Call::getDuration).sum();
         return totalDuration * baseRate / 100;
     }
-
 
 }
