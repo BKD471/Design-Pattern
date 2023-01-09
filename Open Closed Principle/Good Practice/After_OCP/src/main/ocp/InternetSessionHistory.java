@@ -6,6 +6,8 @@ import lombok.Data;
 import java.time.LocalDateTime;
 import java.util.*;
 
+//A Dummy Class to mimic the real life scenario
+//Adds no special behaviour to our existing code
 public class InternetSessionHistory {
     @Data
     @AllArgsConstructor
