@@ -2,13 +2,12 @@ package ocp;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import java.time.LocalDateTime;
 import java.util.*;
 
 
-
+//A Dummy Class to mimic the real life scenario
+// Adds no special behaviour to our existing code
 public class CallHistory {
     @Data
     @AllArgsConstructor
