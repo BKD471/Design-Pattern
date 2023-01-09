@@ -1,0 +1,9 @@
+
+
+o--->Open Closed Principle
+
+
+OCP says that Software Entities(classes,methods,modules) should be open for extension but closed for modification.
+
+In Simpler words,We are allowed to inherit & override the existing method/behaviour of parent class to our child class 
+but we must not modify the existing method of base/parent class.Parent class should be left untouched.
