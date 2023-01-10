@@ -1,0 +1,6 @@
+Liskov Substitution Principle
+
+
+LSP sayys that,We should be able to use sub class/child class objects wherever base class object is expected and
+this substitution should not alter/break desired behaviour of program.
+
