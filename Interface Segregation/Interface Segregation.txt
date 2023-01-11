@@ -11,6 +11,7 @@ and classes implementing that interface ,should not be forced to implement any m
 
 Easy to find if InterFace Segregation is violated or not is to find  whether any class is providing a dummy/empty implementation of a method
 or the method implementation is returning null or dummy values.
+or lookout for those methods that throw UnsupportedOperationException
 
 
 
