@@ -1,0 +1,17 @@
+Interface Segregation
+
+Clients should not be forced to depend upon interfaces that they do not use.
+
+In more common words this is called, Interface Pollution.
+We should not make interfaces bigger, that is do not stuff your interfaces with more and more unrelated abstract methods
+and force all the classes that implements those interfaces to implement those methods even though that class has no purpose/intention to provide implementation of that particular method methods.
+
+In other words, all abstract methods declared in Interfaces should be cohesive and related to each other 
+and classes implementing that interface ,should not be forced to implement any method that does not serve its purpose
+
+Easy to find if InterFace Segregation is violated or not is to find  whether any class is providing a dummy/empty implementation of a method
+or the method implementation is returning null or dummy values.
+
+
+
+ 
