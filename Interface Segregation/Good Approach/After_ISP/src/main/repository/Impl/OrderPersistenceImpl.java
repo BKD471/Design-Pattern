@@ -35,6 +35,6 @@ public class OrderPersistenceImpl implements PersistenceService<Order> {
         }
     }
 
-    //we no longer need findByName method to override and provide dummy implementation in OrderPersistenceServiceIMpl
+    //we are no longer forced to override findByName method ,provide dummy implementation in OrderPersistenceServiceIMpl
 
 }
