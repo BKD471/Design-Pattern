@@ -1,0 +1,23 @@
+Dependency Inversion Principle
+
+It says two thing..
+
+A) High level modules should not depend on low level modules.Both should depend on abstractions
+
+In simpler words ,it means our high level module should not be tightly coupled with low level module.
+
+For example , when we create a concrete implementation of an already existing class A by NEW keyword in some  class B that we are currently writing,
+we are tight coupling class B(high level module) to A(low level module), now if we make any changes to already existing class A, then all such classes that uses/instatiated class A will be impacted.
+
+To fix this, DIC advises us to use an Interface
+
+Instead of creating instances of low level classes, accept parameters of their Interface types
+
+
+
+B) Abstractions should not depend upon details,details should depend upon abstraction
+
+Lets suppose we are using a formater to format any incoming msg be it in JSON/XML and convert it into pojo object
+Our class that's doing its job should not be dependent on type of msg format (JSON/XML) but its common interface type.
+That means we do not care whether the msg is JSON/XML as long as they are of common interface type  i.e both implemented a common interface.
+We will use that interface type  as type of obj reference in our high level module.
