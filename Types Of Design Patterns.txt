@@ -1,0 +1,47 @@
+Based on the problem they solve, Design patterns are categorized into three major Groups
+
+1) Creational Design Pattern: It deals with the process of creation of objects of classes.
+
+ex->
+a)Builder Pattern
+b)Simple Factory
+c)Factory
+d)Prototype
+e)Abstract Factory
+f)Singleton
+                                                 
+
+
+
+
+2) Structural Design Pattern: It deals with how classes and objects are arranged.
+
+ex->
+a)Adapter Pattern
+b)Bridge Pattern
+c)Decorator Pattern
+d)Composite Pattern
+e)Facade Pattern
+f)Flyweight Pattern
+g)Proxy Pattern
+
+
+
+
+
+3) Behavioural Design Pattern: It deals how classes and objects interact and communicate with each other.
+
+ex->
+a)Chain of Responsibility
+b)Interpreter
+c)Command
+d)Mediator
+e)Iterator
+f)Observer
+g)State
+h)strategy
+i)template
+j)Visitor
+k)Null Object
+
+

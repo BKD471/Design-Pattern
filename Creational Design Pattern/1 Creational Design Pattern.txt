@@ -1,0 +1,58 @@
+
+1) Creational Design Pattern: It deals with the process of creation of objects of classes.
+
+Not always, we create obj with NEW keyword. Sometimes in some cases, for some obj to be created, other obj to be created first.
+It includes a series of steps. 
+Sometimes , it may happen that we need to keep a single instance of class through out the application,
+for example a configuration file ,we need singleton instance of that thing throughout the application.
+So creation of objects are not so straightforward and we need the understanding of creational design pattern
+
+
+
+1)Builder Pattern: Objects that need others parts or objects to build them
+
+
+//Lets understand the problem Statement
+
+we have a class
+
+class Product{
+   
+   public Product(int weight,double price,int shipVolume,int shipCode){
+     //initialize  instance members
+   }
+   
+}
+
+
+REQUIREMNT is that we have to make the instance of this class Product as Immutable,and that means we have to
+initialize all the instance members of this class through constructor itself. 
+Now passing lots of arguments through constructor is a bad coding practice, 
+because one who will instantiate the class ,has to provide correct sequence of arguments , it may lead to bugs.
+So this a problem (:
+
+
+lets have another example------->
+
+class Address{
+  public Address(String houseNumber,String street,....){
+    //initialize  instance members
+  }
+}
+
+class User{
+
+  public User(String name,Address address,Locate birthDate,List<Role> roles){
+     //initialize  instance members
+  }
+}
+
+
+To instantiate class User, we need obj of class Address and list of Role objects first.
+Here Builder pattern can help us.
+
+SO WHEN WE NEED BUILDER PATTERN??
+
+we have a complex process to construct objects involving many steps,
+In builder we remove, the logic related to obj creation from client code & abstract it away to separate class
+

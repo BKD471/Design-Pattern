@@ -1,0 +1,14 @@
+
+1) Creational Design Pattern: It deals with the process of creation of objects of classes.
+
+Not always, we create obj with NEW keyword. Sometimes in some cases, for some obj to be created, other obj to be created first.
+It includes a series of steps. 
+Sometimes , it may happen that we need to keep a single instance of class through out the application,
+for example a configuration file ,we need singleton instance of that thing throughout the application.
+So creation of objects are not so straightforward and we need the understanding of creational design pattern
+
+
+
+1)Builder Pattern
+
+
