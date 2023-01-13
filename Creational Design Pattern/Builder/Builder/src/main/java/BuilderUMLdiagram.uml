@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="94.0" y="-16.0">Director</node>
+    <node x="-98.5" y="104.0">ConcreteBuilder</node>
+    <node x="-57.5" y="-16.0">Builder</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ConcreteBuilder" target="Builder" relationship="REALIZATION">
+      <point x="0.0" y="-16.0" />
+      <point x="0.0" y="16.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.5" showDependencies="false" x="12.0" y="110.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
