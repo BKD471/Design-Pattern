@@ -1,0 +1,9 @@
+Builder Implementation Steps  (for future refrences)
+
+1 Identify the "parts" of the product & provide methods to create those parts.
+
+2 It should provide a method to "assemble" or build the product/object
+
+3 It must provide a way/method to get fully object out.
+Optionally builder can keep reference to an product it has built so the same can be returned again in future
+
