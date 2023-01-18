@@ -21,14 +21,17 @@ public class UserWebDto implements UserDto {
         this.age = age;
     }
 
+    @Override
     public String getName() {
         return name;
     }
 
+    @Override
     public String getAddress() {
         return address;
     }
 
+    @Override
     public String getAge() {
         return age;
     }
